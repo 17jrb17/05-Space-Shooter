@@ -1,0 +1,54 @@
+Name: Nathaniel Myer
+Date: 12/19/2019
+Project: 05-Space Shooter
+Peer's repository: https://github.com/17jrb17/05-Space-Shooter.git
+
+
+
+What is something you learned by reviewing your peer's project?
+I learned how important it is to drawn from past experiences and learning. This game showns how the 
+simple building block lessons we learned earlier in the semester can be used in conjunction to build 
+a full game.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+The organization. At times my projects can get a bit out of hand and unorganized to the point that I don't even
+remember what I was doing. Every thing in the code was clearyl organized and commented and I would like to apply
+that to my own projects.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+This is less inprovedment to the code for the features already impllemented but rather suggestions to 
+make the space shooter more engaging. I would suggest adding HP or lives to the player along with collision
+so that when the asteroids come into contact with the player they take damage/die which woulld give this game
+more agency and challenge.
+ 
+
+What could have been clearer or better commented?
+The end half of the code is easy to understand and well commented but the setup and update
+sections that code in the game collisions and scoring need comments for others to understand.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+For some reason even though the bulllets do ten damage it takes two shots to kill enemies with ten health.
+The bullets only seem to do nine damage to an enemy the first shot but then do ten for every additional
+shot to an enemy. Say you want to kill an eney in four shots their health has to be thirty nine not forty.
+
+ 
+Does the repository contain an appropriate LICENSE?
+Yes the respository contains the appropriate signed license.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+Reference that this was for a game technology class, is using python arcade, and was a project
+to make a space shooter. Other than that since the code is well commented the README gets the general
+idea across. Though the apology for the llalte assignment should have been sent in a provate email 
+and not included in the code's publlic README.
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+As I said before the organization is great and it was easy for me to understand
+the code after I saw what was displayed onscreen. Allso even though this project used
+code that we somewhat already learned it changed things in a way that made it wholly unique.
+Like building a castle out of legos.
+
