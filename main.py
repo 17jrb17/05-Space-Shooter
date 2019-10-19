@@ -17,9 +17,10 @@ SCREEN_TITLE = "Shoot the things I guess"
 NUM_ENEMIES = 20
 STARTING_LOCATION = (400,100)
 BULLET_DAMAGE = 10
-ENEMY_HP = 100
+ENEMY_HP = 29
 HIT_SCORE = 10
 KILL_SCORE = 100
+
 
 class Bullet(arcade.Sprite):
     def __init__(self, position, velocity, damage):
@@ -32,16 +33,19 @@ class Bullet(arcade.Sprite):
         self.center_x += self.dx
         self.center_y += self.dy
 
+
 class Player(arcade.Sprite):
     def __init__(self):
         super().__init__("assets/player2.png", 0.5)
         (self.center_x, self.center_y) = STARTING_LOCATION
+
 
 class Enemy(arcade.Sprite):
     def __init__(self, position):
         super().__init__("assets/rock.png", 0.5)
         self.hp = ENEMY_HP
         (self.center_x, self.center_y) = position
+
 
 class Window(arcade.Window):
 
@@ -50,14 +54,12 @@ class Window(arcade.Window):
         file_path = os.path.dirname(os.path.abspath(__file__))
         os.chdir(file_path)
 
-        self.set_mouse_visible(True)
+        self.set_mouse_visible(False)
         arcade.set_background_color(open_color.black)
         self.bullet_list = arcade.SpriteList()
         self.enemy_list = arcade.SpriteList()
         self.player = Player()
         self.score = 0
-
-
 
     def setup(self):
         for i in range(NUM_ENEMIES):
@@ -121,15 +123,13 @@ class Window(arcade.Window):
                 e.center_y = SCREEN_HEIGHT - MARGIN
                 e.dy = abs(e.dy)*-1
 
+
     def on_draw(self):
         arcade.start_render()
         arcade.draw_text(str(self.score), 20, SCREEN_HEIGHT - 40, open_color.white, 16)
         self.player.draw()
         self.bullet_list.draw()
         self.enemy_list.draw()
-
-
-
 
     def on_mouse_motion(self, x, y, dx, dy):
         '''
